@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@font-face {
+  font-family: "norsebold";
+  src: url("./assets/fonts/norse-bold-webfont.woff2") format("woff2"),
+    url("./assets/fonts/norse-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #c5c7cd;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+main {
+  max-width: 1024px;
+  display: flex;
+  min-height: 100vh;
+}
+
+main aside {
+  position: relative;
+  flex: 1.5;
+  background-image: url(./assets/images/obsecure.jpg);
+  background-size: cover;
+}
+
+aside .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 30px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-family: "norsebold";
+}
+
+aside .logo img {
+  max-width: 20%;
+  max-height: 20%;
+}
+
+.logo-text {
+  display: inline;
+  font-size: 6rem;
+}
+
+main form {
+  flex: 2;
+  background-color: #111827;
+
+  padding: 8rem 2rem;
+}
+
+form h2 {
+  margin-bottom: 6rem;
+}
+
+form label {
+  display: block;
+  font-size: 1.3rem;
+}
+
+.input-fields {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  gap: 2rem;
+  background-color: #1f2937;
+  padding: 3rem 2rem;
+}
+
+form input {
+  background-color: inherit;
+  border: 1px solid #c5c7cd;
+  margin-top: 0.5rem;
+}
+
+form input:focus {
+  outline: none;
+  border: 1px solid #88b8ef;
+}
+
+form button {
+  background-color: #313146;
+  margin: 2rem 1rem;
+  width: 15rem;
+  height: 4rem;
+  color: inherit;
+  border: none;
+  border-radius: 5%;
+  font-weight: 700;
+}
+
+form button:hover {
+  background-color: #1f2937;
+  cursor: pointer;
+}
+
+form > p {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+form > p > a {
+  text-decoration: none;
+  color: #313146;
+}
