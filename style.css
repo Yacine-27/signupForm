@@ -24,9 +24,6 @@ input[type="number"] {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-html {
   font-family: "Inter", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -58,10 +55,9 @@ aside .logo {
   justify-content: center;
   position: absolute;
   top: 30px;
-  color: #fff !important;
+  color: #fff;
   width: 100%;
   text-align: center;
-  font-family: "norsebold" !important;
 }
 
 aside .logo img {
@@ -72,6 +68,9 @@ aside .logo img {
 .logo-text {
   display: inline;
   font-size: 6rem;
+  font-family: inherit;
+  font-family: "norsebold";
+  color: inherit;
 }
 
 main form {
@@ -83,6 +82,7 @@ main form {
 
 form h2 {
   margin-bottom: 6rem;
+  font-size: 2rem;
 }
 
 form label {
@@ -102,6 +102,8 @@ form input {
   background-color: inherit;
   border: 1px solid #c5c7cd;
   margin-top: 0.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
 }
 
 form input:focus {
@@ -118,6 +120,7 @@ form button {
   border: none;
   border-radius: 5%;
   font-weight: 700;
+  font-size: 1.2rem;
 }
 
 form button:hover {
@@ -133,6 +136,7 @@ form > p {
 form > p > a {
   text-decoration: none;
   color: #313146;
+  font-size: inherit;
 }
 
 @media only screen and (max-width: 600px) {
@@ -141,7 +145,7 @@ form > p > a {
     height: 100%;
   }
   aside {
-    display: none;
+    background: none;
   }
   .input-fields {
     grid-template: repeat(6, 1fr) / 1fr;
