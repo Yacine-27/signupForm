@@ -30,6 +30,10 @@ input[type="number"] {
   color: #c5c7cd;
 }
 
+html {
+  background-color: #111827;
+}
+
 body {
   display: flex;
   flex-flow: column nowrap;
